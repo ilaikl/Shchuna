@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ilai.shchuna.TeamInfoActivity"
+    android:background="@color/colorPrimaryAppDark"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/logo80x40"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimaryAppRed"
+        android:text=""
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:id="@+id/team_name_tv_info"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/join_team_button"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryAppRed"
+        android:text="Join Team"
+        android:textSize="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryAppDark" />
+
+    <fragment
+        android:id="@+id/map_team"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        />
+
+</LinearLayout>

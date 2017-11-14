@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryAppDark"
+    android:orientation="vertical"
+    tools:context="com.example.ilai.shchuna.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <Button
+            android:id="@+id/log_in_button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/colorPrimaryAppRed"
+            android:text="Account"
+            android:textSize="10dp"
+            android:textColor="@color/colorPrimaryAppDark"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/logo80x40"
+        />
+
+        <Button
+            android:id="@+id/create_team_button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimaryAppRed"
+            android:text="Create Team"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryAppDark" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimaryAppRed"
+            android:text="Team"
+            android:id="@+id/team_name_tv"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimaryAppRed"
+            android:text="Time"
+            android:id="@+id/time_tv"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimaryAppRed"
+            android:text="Max Num of Players"
+            android:id="@+id/num_players_tv"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimaryAppRed"
+            android:text="Distance"
+            android:id="@+id/distance_tv"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/team_table_list"
+        android:layout_gravity="left|center_vertical"/>
+
+
+
+</LinearLayout>

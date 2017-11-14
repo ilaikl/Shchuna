@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ilai.shchuna.CreateTeamActivity"
+    android:background="@color/colorPrimaryAppDark"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Name: "
+        android:textColor="@color/colorPrimaryAppRed"
+        android:textSize="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+        <EditText
+            android:id="@+id/team_name_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Team Name"
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimaryAppRed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maximum number of players: "
+            android:textColor="@color/colorPrimaryAppRed"
+            android:textSize="14dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            />
+        <EditText
+            android:inputType="number"
+            android:id="@+id/num_of_layers_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Number of players"
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimaryAppRed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: "
+            android:textColor="@color/colorPrimaryAppRed"
+            android:textSize="14dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            />
+        <Button
+            android:id="@+id/time_pick_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Time"
+            android:textColor="@color/colorPrimaryAppRed"
+            />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="45" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+    <Button
+
+        android:id="@+id/create_team_button_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Accept"
+        android:textColor="@color/colorPrimaryAppRed"
+        />
+
+    <TextView
+        android:id="@+id/alert_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorPrimaryAppRed"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        />
+    </LinearLayout>
+
+
+</LinearLayout>
